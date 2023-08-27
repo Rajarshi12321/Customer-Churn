@@ -18,10 +18,11 @@ Welcome to the Customer Churn Prediction repository, which is a Customer Churn P
 ## Images
 
 Inputing Features :
-![image](https://github.com/Rajarshi12321/Housing_predict_recommend/assets/94736350/2a1f9fff-bf1e-4533-9090-58db6502445d)
+![image](https://github.com/Rajarshi12321/Customer-Churn/assets/94736350/a2a2ff3b-4a9b-4b13-b13f-fff358021b35)
 
-Predicted and recommended Output :
-![image](https://github.com/Rajarshi12321/Housing_predict_recommend/assets/94736350/60bed2a5-52cc-4c9f-acad-421acf0db3b2)
+
+Predicted Output :
+![image](https://github.com/Rajarshi12321/Customer-Churn/assets/94736350/c8d05a1c-aa49-4453-b09b-295f2085ec45)
 
 
 
