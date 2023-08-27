@@ -1,0 +1,67 @@
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>My Sweet Home</title>
+      <link rel="stylesheet" href="{{url_for('static', filename='css/signup.css')}}" />
+      <link rel="icon" href="{{ url_for('static', filename='img/house_home_building_property_icon.ico') }}" />
+
+      
+    </head>
+
+    <body>
+    
+
+      <div class="container">
+        
+        <div class="wrapper">
+          <div class="title">
+            
+            <span>House price prediction and house Recommend</span>
+            
+          </div>
+          <form action="/" method="post">
+            <div class="options">
+              <div class="row">
+                <div class="selection">
+                  <label for="selected_age">Age</label>
+                  <input id="selected_age" name="selected_age" type="text" placeholder="Age" required  />              
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="selection">
+                <label for="selected_Location">Location</label>
+                <input id="selected_Location" list="scripts_Location" name="selected_Location" type="text" placeholder="Location" required />
+                <datalist id="scripts_Location">
+                  {%for i in Locations%}
+                    <option value="{{i}}">{{i}}</option>
+                  {%endfor%}
+                </datalist>
+              </div>
+              </div>
+              <div class="row">
+                <div class="selection">
+                <label for="selected_M_Bill">Monthly Bill</label>
+                <input id="selected_M_Bill" name="selected_M_Bill" type="text" placeholder="Monthly Bill" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="button">
+              <input type="submit" value="Predict" required />
+            </div>
+          </form>
+          <div class="output">
+          <div class="result">
+            Customer Churn : {{result}}
+         </div>
+        </div>
+        </div>
+        
+        
+      </div>
+    
+    </body>
+  </html>
+  
