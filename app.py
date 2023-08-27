@@ -26,9 +26,24 @@ def home():
     else:
         print("submitted")
 
-        age = int(request.form.get('selected_age')),
-        location = request.form.get('selected_Location'),
-        M_Bill = int(request.form.get('selected_M_Bill')),
+        try:
+
+            age = int(request.form.get('selected_age')),
+
+        except:
+            return render_template('home.html', Locations=['Los Angeles', 'New York', 'Miami', 'Chicago', 'Houston'], result="Please make sure that the input is in correct format")
+
+        try:
+            location = request.form.get('selected_Location'),
+
+        except:
+            return render_template('home.html', Locations=['Los Angeles', 'New York', 'Miami', 'Chicago', 'Houston'], result="Please make sure that the input is in correct format")
+
+        try:
+            M_Bill = float(request.form.get('selected_M_Bill')),
+
+        except:
+            return render_template('home.html', Locations=['Los Angeles', 'New York', 'Miami', 'Chicago', 'Houston'], result="Please make sure that the input is in correct format")
 
         print(age[0], location[0], M_Bill[0])
 
@@ -39,7 +54,7 @@ def home():
 
         fea_df['Location'] = fea_df['Location'].map(labels_ordered)
 
-        print(fea_df)
+        print(fea_df.info())
 
         pred = model.predict(fea_df)
 
