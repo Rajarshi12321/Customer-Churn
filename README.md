@@ -142,5 +142,5 @@ I welcome contributions to improve the functionality and performance of the app.
 ## License
 This project is licensed under the MIT License. Feel free to modify and distribute it as per the terms of the license.
 
-I hope this README provides you with the necessary information to get started with the Housing Price Prediction and Recommending project. 
+I hope this README provides you with the necessary information to get started with the Customer Churn Prediction project.
 
