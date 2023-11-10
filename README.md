@@ -22,7 +22,7 @@ Inputing Features :
 
 
 Predicted Output :
-![image](https://github.com/Rajarshi12321/Customer-Churn/assets/94736350/c8d05a1c-aa49-4453-b09b-295f2085ec45)
+![image](https://github.com/Rajarshi12321/Customer-Churn/assets/94736350/935d52f6-ae14-41a7-aa3b-d7cedb490731)
 
 
 
