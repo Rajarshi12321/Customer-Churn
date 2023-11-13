@@ -93,7 +93,7 @@ To run this project locally, please follow these steps:-
 1. Clone the repository:
 
    ```shell
-   https://github.com/Rajarshi12321/Customer-Churn
+   git clone https://github.com/Rajarshi12321/Customer-Churn.git
    ```
 
 
